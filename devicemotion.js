@@ -9,3 +9,8 @@ if (window.DeviceMotionEvent) {
 } else {
     document.getElementById("dmeSupported").innerText = "Device Motion wird nicht unterstützt!";
 }
+
+if (event.acceleration.z > maxi) {
+    maxi = event.acceleration.z;
+    document.getElementById("meinMax").innerHTML = 'max z: ' + maxi;
+}
