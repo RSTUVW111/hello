@@ -12,5 +12,6 @@ if (window.DeviceMotionEvent) {
 
 if (event.acceleration.z > maxi) {
     maxi = event.acceleration.z;
+    maxi > -1
     document.getElementById("meinMax").innerHTML = 'max z: ' + maxi;
 }
